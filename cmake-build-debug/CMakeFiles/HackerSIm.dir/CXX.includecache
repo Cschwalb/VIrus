@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/cygdrive/c/Users/thepu/CLionProjects/HackerSIm/VIrus.h
+string
+/cygdrive/c/Users/thepu/CLionProjects/HackerSIm/string
+
+/cygdrive/c/Users/thepu/CLionProjects/HackerSIm/utility.cpp
+cstdlib
+-
+iostream
+-
+utility.h
+/cygdrive/c/Users/thepu/CLionProjects/HackerSIm/utility.h
+
+/cygdrive/c/Users/thepu/CLionProjects/HackerSIm/utility.h
+VIrus.h
+/cygdrive/c/Users/thepu/CLionProjects/HackerSIm/VIrus.h
+
