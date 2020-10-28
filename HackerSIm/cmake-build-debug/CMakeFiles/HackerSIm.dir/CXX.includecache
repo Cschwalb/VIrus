@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/cygdrive/c/Users/thepu/CLionProjects/HackerSIm/Player.h
+cmake-build-debug/Backpack.h
+/cygdrive/c/Users/thepu/CLionProjects/HackerSIm/cmake-build-debug/Backpack.h
+list
+/cygdrive/c/Users/thepu/CLionProjects/HackerSIm/list
+
+/cygdrive/c/Users/thepu/CLionProjects/HackerSIm/PriceGenerator.cpp
+PriceGenerator.h
+/cygdrive/c/Users/thepu/CLionProjects/HackerSIm/PriceGenerator.h
+
+/cygdrive/c/Users/thepu/CLionProjects/HackerSIm/PriceGenerator.h
+vector
+/cygdrive/c/Users/thepu/CLionProjects/HackerSIm/vector
+string
+/cygdrive/c/Users/thepu/CLionProjects/HackerSIm/string
+Player.h
+/cygdrive/c/Users/thepu/CLionProjects/HackerSIm/Player.h
+
+/cygdrive/c/Users/thepu/CLionProjects/HackerSIm/VIrus.h
+string
+/cygdrive/c/Users/thepu/CLionProjects/HackerSIm/string
+
+/cygdrive/c/Users/thepu/CLionProjects/HackerSIm/cmake-build-debug/Backpack.h
+string
+/cygdrive/c/Users/thepu/CLionProjects/HackerSIm/cmake-build-debug/string
+../VIrus.h
+/cygdrive/c/Users/thepu/CLionProjects/HackerSIm/VIrus.h
+list
+/cygdrive/c/Users/thepu/CLionProjects/HackerSIm/cmake-build-debug/list
+
