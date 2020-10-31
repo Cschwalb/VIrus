@@ -16,7 +16,7 @@ PriceGenerator::generatePriceForQuantityPlayerBuy(const enum ComplexityPrice pri
         int nQuantity) {
     const auto playerRegion = (pPlayer.getRegionHeat() / 100); // turn this to a percentage
     float fComplexCost;
-    fComplexCost = ((1 + playerRegion) * price * nQuantity) + this->volatilityGenerator(pPlayer);
+    fComplexCost = ((1 + playerRegion) * price * nQuantity) + this->volatilityGenerator(pPlayer) - (nQuantity * playerRegion);
     return fComplexCost;
 }
 
@@ -25,13 +25,12 @@ const float PriceGenerator::generatePriceForQuantityPlayerSell(const enum Comple
         int nQuantity) {
     const auto playerRegion = (pPlayer.getRegionHeat() / 100); // turn this to a percentage
     float fComplexCost;
-    fComplexCost = ((1 + playerRegion) * price * nQuantity) - this->volatilityGenerator(pPlayer);
+    fComplexCost = ((1 + playerRegion) * price * nQuantity) - this->volatilityGenerator(pPlayer)*(-1) - (nQuantity * playerRegion);
     return fComplexCost;
 }
 
-float PriceGenerator::volatilityGenerator(Player pPlayer) {
-    float vol = pPlayer.getRegionHeat() / 100;
-    vol = vol * (std::rand() / 100);
-    std::cout<< "[+] Volatility is " << vol << std::endl;
+float PriceGenerator::volatilityGenerator(Player &pPlayer) {
+    float vol = 0;
+    vol = (std::rand() / 100) / 10000 + (1 + (pPlayer.getRegionHeat() / 100));
     return vol;
 }

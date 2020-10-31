@@ -16,6 +16,14 @@ public:
     double getCash();
     void addCash(double dCash);
     int countVirus(std::basic_string<char>);
+    double getMaxStorage(){
+        return this->m_nMaxStorage;
+    }
+    double getCurrentStorage(){
+        return this->m_nCurrentStorage;
+    }
+    // basicall a usb stick.
+    const std::string toString();
 private:
     double m_nMaxStorage;
     double m_nCurrentStorage;

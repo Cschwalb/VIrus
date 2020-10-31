@@ -9,6 +9,7 @@ CMakeFiles/HackerSIm.dir/Player.cpp.o: ../Player.cpp
 CMakeFiles/HackerSIm.dir/Player.cpp.o: ../Player.h
 CMakeFiles/HackerSIm.dir/Player.cpp.o: ../VIrus.h
 CMakeFiles/HackerSIm.dir/Player.cpp.o: Backpack.h
+CMakeFiles/HackerSIm.dir/Player.cpp.o: ../utility.h
 
 CMakeFiles/HackerSIm.dir/PriceGenerator.cpp.o: ../Player.h
 CMakeFiles/HackerSIm.dir/PriceGenerator.cpp.o: ../PriceGenerator.cpp
@@ -20,7 +21,12 @@ CMakeFiles/HackerSIm.dir/VIrus.cpp.o: ../VIrus.cpp
 CMakeFiles/HackerSIm.dir/VIrus.cpp.o: ../VIrus.h
 CMakeFiles/HackerSIm.dir/VIrus.cpp.o: ../utility.h
 
+CMakeFiles/HackerSIm.dir/main.cpp.o: ../Player.h
+CMakeFiles/HackerSIm.dir/main.cpp.o: ../PriceGenerator.h
+CMakeFiles/HackerSIm.dir/main.cpp.o: ../VIrus.h
+CMakeFiles/HackerSIm.dir/main.cpp.o: Backpack.h
 CMakeFiles/HackerSIm.dir/main.cpp.o: ../main.cpp
+CMakeFiles/HackerSIm.dir/main.cpp.o: ../utility.h
 
 CMakeFiles/HackerSIm.dir/utility.cpp.o: ../VIrus.h
 CMakeFiles/HackerSIm.dir/utility.cpp.o: ../utility.cpp

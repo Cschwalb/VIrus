@@ -27,6 +27,10 @@ bool utility::VIrusdefend(VIrus &vi) {
         return true;
 }
 
+std::basic_string<char> utility::LINFO(const char* pTotal) {
+   std::cout<<"\n[++++] " << pTotal<< std::endl;
+}
+
 
 
 

@@ -2,6 +2,7 @@
 // Created by thepu on 10/26/2020.
 //
 
+#include <sstream>
 #include "Backpack.h"
 #include "string"
 
@@ -40,9 +41,10 @@ bool Backpack::takeItem(VIrus vVir) {
         std::list<VIrus>::iterator it;
         for(it = m_lViruses.begin(); it != m_lViruses.end(); it++){
             m_lViruses.erase(it);
-            break; // only one item pls.
+            return true; // only one item pls.
         }
     }
+    return false;
 }
 
 double Backpack::getCash() {
@@ -57,6 +59,21 @@ Backpack::Backpack() {
     this->m_nTotalCash = 750; // start with this
     this->m_nCurrentStorage = 0;
     this->m_nMaxStorage = 256;
-    this->m_lViruses.push_back(VIrus());
+    auto virus = new VIrus();
+    this->m_lViruses.push_back(*virus);
+}
 
+const std::string Backpack::toString() {
+    std::stringstream sStr;
+    sStr<<"[+]\n Max Storage: ";
+    sStr << getMaxStorage();
+    sStr<<"\nCurrent Storage: ";
+    sStr << getCurrentStorage();
+    sStr << "\nList Of Viruses\n======\n";
+    for (std::list<VIrus>::iterator it = this->m_lViruses.begin(); it != this->m_lViruses.end(); ++it)
+    {
+        sStr << it->getName();
+        sStr <<  "\n";
+    }
+    return sStr.str();
 }

@@ -10,15 +10,19 @@
 string
 /cygdrive/c/Users/thepu/CLionProjects/HackerSIm/string
 
-/cygdrive/c/Users/thepu/CLionProjects/HackerSIm/utility.cpp
-cstdlib
+/cygdrive/c/Users/thepu/CLionProjects/HackerSIm/cmake-build-debug/Backpack.cpp
+sstream
 -
-iostream
--
-utility.h
-/cygdrive/c/Users/thepu/CLionProjects/HackerSIm/utility.h
+Backpack.h
+/cygdrive/c/Users/thepu/CLionProjects/HackerSIm/cmake-build-debug/Backpack.h
+string
+/cygdrive/c/Users/thepu/CLionProjects/HackerSIm/cmake-build-debug/string
 
-/cygdrive/c/Users/thepu/CLionProjects/HackerSIm/utility.h
-VIrus.h
+/cygdrive/c/Users/thepu/CLionProjects/HackerSIm/cmake-build-debug/Backpack.h
+string
+/cygdrive/c/Users/thepu/CLionProjects/HackerSIm/cmake-build-debug/string
+../VIrus.h
 /cygdrive/c/Users/thepu/CLionProjects/HackerSIm/VIrus.h
+list
+/cygdrive/c/Users/thepu/CLionProjects/HackerSIm/cmake-build-debug/list
 

@@ -16,12 +16,13 @@ public:
            std::list<VIrus>,
            int,
            float);
+    Player();
     void createNewProfile();
     void setBackpack(Backpack&);
     Backpack& getBackpack();
     void setName(std::string&);
     std::string& getName();
-    void setSaveVersion();
+    void setSaveVersion(std::string&);
     void addMoney(float fCash);
     void setMoney(float fCash);
     bool createAndAddVirus(VIrus);
@@ -34,6 +35,8 @@ public:
     void addDay();
     float getRegionHeat();
     void setRegionHeat(float);
+    bool developVIrus(VIrus);
+    const std::string toString();
 
 
 

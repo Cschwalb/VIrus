@@ -8,8 +8,8 @@
 
 class VIrus {
 public:
+    VIrus();
     VIrus(std::string sName, std::string sDesc, double dCost, float complexity);
-    VIrus(); // generic one
     std::string getName()&;
     std::string getDescription()&;
     void setName(std::string&);
@@ -20,12 +20,25 @@ public:
     void setComplexity(float);
     bool attack();
     bool defense();
+    bool decode(float fAttackComplexity);
+    inline void addComplexity(float fFl){
+        this->m_fComplexity += fFl;
+    }
+
+    inline void setJiraPoints(int nPts) {
+        this->m_nJiraStoryPoints = nPts;
+    }
+
+    inline int getJiraPoints(){
+        return this->m_nJiraStoryPoints;
+    }
+
 private:
     std::string m_sName;
     std::string m_sDescripton;
     double m_dCost;
     float m_fComplexity;
-
+    int m_nJiraStoryPoints;
 };
 
 

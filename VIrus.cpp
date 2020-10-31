@@ -11,6 +11,13 @@ VIrus::VIrus() {
     this->m_dCost = 100.00;
 }
 
+VIrus::VIrus(std::string sName, std::string sDesc, double dCost, float complexity) {
+    this->m_sName = sName;
+    this->m_sDescripton = sDesc;
+    this->m_dCost = dCost;
+    this->m_fComplexity = complexity;
+}
+
 std::string VIrus::getName()& {
     return this->m_sName;
 }
@@ -51,5 +58,15 @@ bool VIrus::attack() {
 bool VIrus::defense() {
     return defense();
 }
+
+bool VIrus::decode(float fAttackComplexity) {
+    if(fAttackComplexity > (this->m_fComplexity * 2)){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
+
 
 

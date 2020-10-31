@@ -10,6 +10,7 @@ CMakeFiles/HackerSIm.dir/Player.cpp.o
  /cygdrive/c/Users/thepu/CLionProjects/HackerSIm/Player.h
  /cygdrive/c/Users/thepu/CLionProjects/HackerSIm/VIrus.h
  /cygdrive/c/Users/thepu/CLionProjects/HackerSIm/cmake-build-debug/Backpack.h
+ /cygdrive/c/Users/thepu/CLionProjects/HackerSIm/utility.h
 CMakeFiles/HackerSIm.dir/PriceGenerator.cpp.o
  /cygdrive/c/Users/thepu/CLionProjects/HackerSIm/Player.h
  /cygdrive/c/Users/thepu/CLionProjects/HackerSIm/PriceGenerator.cpp
@@ -21,7 +22,12 @@ CMakeFiles/HackerSIm.dir/VIrus.cpp.o
  /cygdrive/c/Users/thepu/CLionProjects/HackerSIm/VIrus.h
  /cygdrive/c/Users/thepu/CLionProjects/HackerSIm/utility.h
 CMakeFiles/HackerSIm.dir/main.cpp.o
+ /cygdrive/c/Users/thepu/CLionProjects/HackerSIm/Player.h
+ /cygdrive/c/Users/thepu/CLionProjects/HackerSIm/PriceGenerator.h
+ /cygdrive/c/Users/thepu/CLionProjects/HackerSIm/VIrus.h
+ /cygdrive/c/Users/thepu/CLionProjects/HackerSIm/cmake-build-debug/Backpack.h
  /cygdrive/c/Users/thepu/CLionProjects/HackerSIm/main.cpp
+ /cygdrive/c/Users/thepu/CLionProjects/HackerSIm/utility.h
 CMakeFiles/HackerSIm.dir/utility.cpp.o
  /cygdrive/c/Users/thepu/CLionProjects/HackerSIm/VIrus.h
  /cygdrive/c/Users/thepu/CLionProjects/HackerSIm/utility.cpp
