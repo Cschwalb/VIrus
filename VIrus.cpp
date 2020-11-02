@@ -38,6 +38,8 @@ void VIrus::setDescription(std::string &sDesc) {
 }
 
 double VIrus::getCost(){
+    printf("%.2f", this->m_dCost);
+
     return this->m_dCost;
 }
 

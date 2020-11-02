@@ -3,6 +3,7 @@
 //
 
 #include <sstream>
+#include <iostream>
 #include "Backpack.h"
 #include "string"
 
@@ -27,6 +28,7 @@ int Backpack::countVirus(std::basic_string<char> sCountVirus){
 
 bool Backpack::addItem(VIrus vVirus) {
     if(countVirus(vVirus.getName()) == 0) {
+        std::cout<<"true"<<std::endl;
         this->m_lViruses.push_back(vVirus);
         return true;
     }
@@ -81,8 +83,8 @@ const std::string Backpack::toString() {
 std::string Backpack::dumpCurrentItems() {
     std::stringstream output;
     for(auto it = this->m_lViruses.begin(); it != this->m_lViruses.end(); it++){
-        output << "Virus name : ";
-        output << it->getName();
+        output << "Virus name : "<< it->getName();
+        output << std::endl<< "Cost: "<< it->getCost() << std::endl;
         output << std::endl;
     }
     output << "Cash: ";

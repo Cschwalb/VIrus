@@ -77,11 +77,18 @@ bool Player::createAndAddVirus(VIrus) {
 
 bool Player::addVirus(VIrus vir) {
     int nCount = this->m_lAuthoredVirus.size();
-    this->m_lAuthoredVirus.push_front(vir);
+    this->m_lAuthoredVirus.push_back(vir);
+    this->m_bBackpack.addItem(vir);
     if(nCount < this->m_lAuthoredVirus.size())
+    {
+        std::cout<<"true add"<<std::endl;
         return true;
+    }
     else
+    {
+        std::cout<<"false addvirus"<<std::endl;
         return false;
+    }
 }
 
 std::list<VIrus> Player::getListOfAuthoredViruses() {
@@ -123,6 +130,7 @@ bool Player::developVIrus(VIrus vIrus) {
     {
         std::cout<<"[+] starting development of: " << vIrus.getName() << std::endl;
         this->m_lAuthoredVirus.emplace_back(vIrus);
+        this->m_bBackpack.addItem(vIrus);
         return true;
     }
     else
@@ -161,5 +169,11 @@ bool Player::virusExistsInAuthored(VIrus& virus) {
             return true;
     }
     return false;
+}
+
+Backpack Player::Instance() {
+    if(this == nullptr)
+        this->m_bBackpack = Backpack();
+    return this->m_bBackpack;
 }
 

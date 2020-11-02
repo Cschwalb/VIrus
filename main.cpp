@@ -36,16 +36,28 @@ int main() {
                     *pPlay,
                     2)))
              << std::endl;
-    utility::getMenu();
-    std::cout<<"caleb caleb caleb " << pPlay->getBackpack().countWritten()<<std::endl;
+    //utility::getMenu();
+    std::cout<<"Backpack count " << pPlay->getBackpack().countWritten()<<std::endl;
     std::cout<<pPlay->getBackpack().dumpCurrentItems()<<std::endl;
     VIrus *newVirus = new VIrus("Rootkit level 2", "second iteration of the first attack...",
                                5425, 2, 5);
+
+    std::cout<<"=======starting dev work on this....  not added." << std::endl;
     pPlay->developVIrus(*newVirus);
     pPlay->addVirus(*newVirus);
     std::cout<<"caleb caleb caleb " << pPlay->getBackpack().countWritten()<<std::endl;
     std::cout<<newVirus->toString().c_str()<<std::endl;
-    std::cout<<pPlay->getBackpack().dumpCurrentItems()<<std::endl;
+    std::cout<<"=======dump" << std::endl;
+    std::cout<<pPlay->Instance().dumpCurrentItems()<<std::endl;
+    VIrus pVIrus;
+
+    pPlay->developVIrus(pVIrus);
+    pPlay->addVirus(VIrus("Cool Rootkit v3", "Coolest thing ever", 7968, 4, 5));
+    std::cout<<pVIrus.toString()<<std::endl;
+
+    std::cout<<"=======dump" << std::endl;
+    std::cout<<pPlay->Instance().dumpCurrentItems()<<std::endl;
+    std::cout<<"Backpack count " << pPlay->getBackpack().countWritten()<<std::endl;
     /*
     std::cout.setf(std::ios::fixed, std::ios::floatfield);
     std::cout.setf(std::ios::showpoint);

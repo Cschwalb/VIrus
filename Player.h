@@ -39,6 +39,7 @@ public:
     const std::string toString();
     bool makeCopyOfVirus(VIrus&);
     bool virusExistsInAuthored(VIrus&);
+    Backpack Instance();
 
 
 
