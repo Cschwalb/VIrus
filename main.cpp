@@ -13,7 +13,6 @@ int main() {
     std::cout << "Hello, World!" << std::endl;
     auto out = PriceGenerator();
     Player *pPlay = new Player();
-    utility::LINFO(pPlay->toString().c_str());
     utility ut;
     std::cout<<ut.PrecisionSetPrint(
             out.generatePriceForQuantityPlayerSell(
@@ -37,11 +36,22 @@ int main() {
                     *pPlay,
                     2)))
              << std::endl;
+    utility::getMenu();
+    std::cout<<"caleb caleb caleb " << pPlay->getBackpack().countWritten()<<std::endl;
+    std::cout<<pPlay->getBackpack().dumpCurrentItems()<<std::endl;
+    VIrus *newVirus = new VIrus("Rootkit level 2", "second iteration of the first attack...",
+                               5425, 2, 5);
+    pPlay->developVIrus(*newVirus);
+    pPlay->addVirus(*newVirus);
+    std::cout<<"caleb caleb caleb " << pPlay->getBackpack().countWritten()<<std::endl;
+    std::cout<<newVirus->toString().c_str()<<std::endl;
+    std::cout<<pPlay->getBackpack().dumpCurrentItems()<<std::endl;
     /*
     std::cout.setf(std::ios::fixed, std::ios::floatfield);
     std::cout.setf(std::ios::showpoint);
     std::cout.precision(2);
     std::cout<<out.generatePriceForQuantityPlayerBuy(ComplexityPrice::two, *pPlay, 10)<<std::endl;
     */
+    delete newVirus;
     return 0;
 }

@@ -31,7 +31,25 @@ std::basic_string<char> utility::LINFO(const char* pTotal) {
    std::cout<<"\n[++++] " << pTotal<< std::endl;
 }
 
+std::basic_string<char> utility::printMenu() {
+    std::stringstream menu;
+    menu << "[1] Buy\n[2]Sell\n[3]Inventory\n[4]Self\n[5]Next Day\n";
+    return menu.str().c_str();
+}
 
+int utility::getMenu() {
+    std::cout<<printMenu();
+    int nEnter = 0;
+    std::cout<<"Please enter a choice:  ";
+    std::cin>>nEnter;
+    return nEnter;
+}
+
+void utility::error(const char *msg) {
+    std::cout<<msg<<std::endl;
+    perror(msg);
+    exit(-5);
+}
 
 
 

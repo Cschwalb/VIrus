@@ -9,13 +9,15 @@ VIrus::VIrus() {
     this->m_sDescripton = "very basic rootkit with low complexity ranking";
     this->m_fComplexity = 1.0;
     this->m_dCost = 100.00;
+    this->m_nJiraStoryPoints = 1;
 }
 
-VIrus::VIrus(std::string sName, std::string sDesc, double dCost, float complexity) {
+VIrus::VIrus(std::string sName, std::string sDesc, double dCost, float complexity, int nJira) {
     this->m_sName = sName;
     this->m_sDescripton = sDesc;
     this->m_dCost = dCost;
     this->m_fComplexity = complexity;
+    this->m_nJiraStoryPoints = nJira;
 }
 
 std::string VIrus::getName()& {
@@ -39,10 +41,6 @@ double VIrus::getCost(){
     return this->m_dCost;
 }
 
-void VIrus::setCost(double dCost) {
-    this->m_dCost = dCost;
-}
-
 void VIrus::setComplexity(float complex) {
     this->m_fComplexity = complex;
 }
@@ -63,10 +61,19 @@ bool VIrus::decode(float fAttackComplexity) {
     if(fAttackComplexity > (this->m_fComplexity * 2)){
         return true;
     }
-    else{
+    else{// split into days
         return false;
     }
 }
 
+std::string VIrus::toString() {
+    std::stringstream read;
+    read << "Name " << this->m_sName << std::endl;
+    read << "Description " << this->m_sDescripton << std::endl;
+    read << "Cost " << this->m_dCost << std::endl;
+    read << "Complexity " << this->m_fComplexity << std::endl;
+    read << "Jira " << this->m_nJiraStoryPoints << std::endl;
+    return read.str();
+}
 
 

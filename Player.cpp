@@ -119,10 +119,10 @@ void Player::setRegionHeat(float f) {
 
 bool Player::developVIrus(VIrus vIrus) {
 
-    if(this->m_fEnergy > this->m_fEnergy)
+    if(this->m_fEnergy > vIrus.getComplexity() * 20)
     {
         std::cout<<"[+] starting development of: " << vIrus.getName() << std::endl;
-        this->m_lAuthoredVirus.push_back(vIrus);
+        this->m_lAuthoredVirus.emplace_back(vIrus);
         return true;
     }
     else
@@ -136,8 +136,11 @@ bool Player::developVIrus(VIrus vIrus) {
 const std::string Player::toString() {
     std::stringstream sPlayerString;
     sPlayerString << "Name ";
-    sPlayerString<<getName();
-    sPlayerString << "\nVirus List:\n";
+    sPlayerString<<getName() << getName();
+    sPlayerString << "Cash ";
+    sPlayerString << this->m_bBackpack.getCash();
+    sPlayerString<<"\n";
+    sPlayerString << "\nVirus List:\\=======\\\n";
     for (std::list<VIrus>::iterator it = this->m_lAuthoredVirus.begin(); it != this->m_lAuthoredVirus.end(); ++it)
     {
         sPlayerString << it->getName();
@@ -147,9 +150,16 @@ const std::string Player::toString() {
     sPlayerString << "Current Day Count ";
     sPlayerString << getDay();
 
-    sPlayerString << "\nHeat \n";
+    sPlayerString << "\nHeat ";
     sPlayerString << getRegionHeat();
-
     return sPlayerString.str();
+}
+
+bool Player::virusExistsInAuthored(VIrus& virus) {
+    for(auto it = this->m_lAuthoredVirus.begin(); it != this->m_lAuthoredVirus.end(); it++){
+        if(it->getName().compare(virus.getName()) == 0)
+            return true;
+    }
+    return false;
 }
 

@@ -37,7 +37,8 @@ public:
     void setRegionHeat(float);
     bool developVIrus(VIrus);
     const std::string toString();
-
+    bool makeCopyOfVirus(VIrus&);
+    bool virusExistsInAuthored(VIrus&);
 
 
 

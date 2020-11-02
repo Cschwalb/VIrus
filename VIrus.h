@@ -9,13 +9,15 @@
 class VIrus {
 public:
     VIrus();
-    VIrus(std::string sName, std::string sDesc, double dCost, float complexity);
+    VIrus(std::string sName, std::string sDesc, double dCost, float complexity, int nJira);
     std::string getName()&;
     std::string getDescription()&;
     void setName(std::string&);
     void setDescription(std::string&);
     double getCost();
-    void setCost(double dCost);
+    inline void setCost(double dCost){
+        this->m_dCost = dCost;
+    }
     float getComplexity();
     void setComplexity(float);
     bool attack();
@@ -32,6 +34,8 @@ public:
     inline int getJiraPoints(){
         return this->m_nJiraStoryPoints;
     }
+
+    std::string toString();
 
 private:
     std::string m_sName;

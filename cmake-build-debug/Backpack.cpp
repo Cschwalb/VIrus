@@ -26,12 +26,12 @@ int Backpack::countVirus(std::basic_string<char> sCountVirus){
 }
 
 bool Backpack::addItem(VIrus vVirus) {
-    if(vVirus.getName().empty() == true) {
-        return false;
-    }
-    else {
+    if(countVirus(vVirus.getName()) == 0) {
         this->m_lViruses.push_back(vVirus);
         return true;
+    }
+    else {
+        return false;
     }
 }
 
@@ -76,4 +76,16 @@ const std::string Backpack::toString() {
         sStr <<  "\n";
     }
     return sStr.str();
+}
+
+std::string Backpack::dumpCurrentItems() {
+    std::stringstream output;
+    for(auto it = this->m_lViruses.begin(); it != this->m_lViruses.end(); it++){
+        output << "Virus name : ";
+        output << it->getName();
+        output << std::endl;
+    }
+    output << "Cash: ";
+    output << getCash();
+    return output.str();
 }

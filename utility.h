@@ -6,6 +6,14 @@
 #include <iostream>
 #include <iomanip>
 #include "VIrus.h"
+#include <unistd.h>
+// pinging ourselves...
+#include <stdio.h>
+#include <sys/socket.h>
+#include <stdlib.h>
+#include <netinet/in.h>
+#include <string.h>
+#define PORT 8080
 
 class utility {
 public:
@@ -24,7 +32,9 @@ public:
     float static inline bidask(float fSell, float fBuy){
         return (fSell + fBuy) / 2; // average of the two...
     }
-
+    std::basic_string<char> static printMenu();
+    int static getMenu();
+    void error(const char* msg);
 
 };
 

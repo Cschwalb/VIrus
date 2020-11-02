@@ -24,6 +24,11 @@ public:
     }
     // basicall a usb stick.
     const std::string toString();
+    std::string dumpCurrentItems();
+
+    inline int countWritten(){
+        return this->m_lViruses.size();
+    }
 private:
     double m_nMaxStorage;
     double m_nCurrentStorage;
