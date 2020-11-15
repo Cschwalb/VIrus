@@ -25,11 +25,9 @@ enum ComplexityPrice{
 class PriceGenerator {
 public:
     PriceGenerator();
-    float volatilityGenerator(Player&);
-    const float
-    generatePriceForQuantityPlayerBuy(const enum ComplexityPrice, Player &, int nQuantity);
-    const float
-    generatePriceForQuantityPlayerSell(const enum ComplexityPrice, Player &, int nQuantity);
+    float volatilityGenerator(Player pPlayer);
+    const float generatePriceForQuantityPlayerBuy(const enum ComplexityPrice, Player &, int nQuantity);
+    const float generatePriceForQuantityPlayerSell(const enum ComplexityPrice, Player &, int nQuantity);
 };
 
 

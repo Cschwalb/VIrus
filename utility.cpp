@@ -5,6 +5,7 @@
 #include <cstdlib>
 #include <iostream>
 #include "utility.h"
+#include "sstream"
 
 float utility::getRandomPercentage() {
     return (std::rand()%100) / 100;
@@ -29,6 +30,7 @@ bool utility::VIrusdefend(VIrus &vi) {
 
 std::basic_string<char> utility::LINFO(const char* pTotal) {
    std::cout<<"\n[++++] " << pTotal<< std::endl;
+   return pTotal;
 }
 
 std::basic_string<char> utility::printMenu() {
@@ -44,6 +46,8 @@ int utility::getMenu() {
     std::cin>>nEnter;
     return nEnter;
 }
+
+
 
 void utility::error(const char *msg) {
     std::cout<<msg<<std::endl;

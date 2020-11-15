@@ -2,6 +2,7 @@
 
 #include "VIrus.h"
 #include "utility.h"
+#include "sstream"
 //
 // Created by thepu on 10/26/2020.
 VIrus::VIrus() {
@@ -47,8 +48,26 @@ void VIrus::setComplexity(float complex) {
     this->m_fComplexity = complex;
 }
 
-float VIrus::getComplexity() {
-    return this->m_fComplexity;
+ComplexityPrice VIrus::getComplexity() {
+    if(this->m_fComplexity <= 1)
+        return ComplexityPrice::one;
+    if(this->m_fComplexity >= 2 && this->m_fComplexity < 3)
+        return ComplexityPrice::two;
+    if(this->m_fComplexity >= 3 && this->m_fComplexity < 4)
+        return ComplexityPrice::three;
+    if(this->m_fComplexity >= 4 && this->m_fComplexity < 5)
+        return ComplexityPrice::four;
+    if(this->m_fComplexity >= 5 && this->m_fComplexity < 6)
+        return ComplexityPrice::five;
+    if(this->m_fComplexity >= 6 && this->m_fComplexity < 7)
+        return ComplexityPrice::six;
+    if(this->m_fComplexity >= 7 && this->m_fComplexity  8)
+        return ComplexityPrice::seven;
+    if(this->m_fComplexity >= 8 && this->m_fComplexity < 9)
+        return ComplexityPrice::eight;
+    if(this->m_fComplexity >= 9 && this->m_fComplexity < 10)
+        return ComplexityPrice::nine;
+
 }
 
 bool VIrus::attack() {

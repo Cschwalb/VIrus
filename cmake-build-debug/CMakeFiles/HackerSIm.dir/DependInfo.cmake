@@ -4,14 +4,14 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/cygdrive/c/Users/thepu/CLionProjects/HackerSIm/cmake-build-debug/Backpack.cpp" "/cygdrive/c/Users/thepu/CLionProjects/HackerSIm/cmake-build-debug/CMakeFiles/HackerSIm.dir/Backpack.cpp.o"
-  "/cygdrive/c/Users/thepu/CLionProjects/HackerSIm/Player.cpp" "/cygdrive/c/Users/thepu/CLionProjects/HackerSIm/cmake-build-debug/CMakeFiles/HackerSIm.dir/Player.cpp.o"
-  "/cygdrive/c/Users/thepu/CLionProjects/HackerSIm/PriceGenerator.cpp" "/cygdrive/c/Users/thepu/CLionProjects/HackerSIm/cmake-build-debug/CMakeFiles/HackerSIm.dir/PriceGenerator.cpp.o"
-  "/cygdrive/c/Users/thepu/CLionProjects/HackerSIm/VIrus.cpp" "/cygdrive/c/Users/thepu/CLionProjects/HackerSIm/cmake-build-debug/CMakeFiles/HackerSIm.dir/VIrus.cpp.o"
-  "/cygdrive/c/Users/thepu/CLionProjects/HackerSIm/main.cpp" "/cygdrive/c/Users/thepu/CLionProjects/HackerSIm/cmake-build-debug/CMakeFiles/HackerSIm.dir/main.cpp.o"
-  "/cygdrive/c/Users/thepu/CLionProjects/HackerSIm/utility.cpp" "/cygdrive/c/Users/thepu/CLionProjects/HackerSIm/cmake-build-debug/CMakeFiles/HackerSIm.dir/utility.cpp.o"
+  "C:/Users/Caleb/CLionProjects/VIrus/cmake-build-debug/Backpack.cpp" "C:/Users/Caleb/CLionProjects/VIrus/cmake-build-debug/CMakeFiles/HackerSIm.dir/Backpack.cpp.obj"
+  "C:/Users/Caleb/CLionProjects/VIrus/Player.cpp" "C:/Users/Caleb/CLionProjects/VIrus/cmake-build-debug/CMakeFiles/HackerSIm.dir/Player.cpp.obj"
+  "C:/Users/Caleb/CLionProjects/VIrus/PriceGenerator.cpp" "C:/Users/Caleb/CLionProjects/VIrus/cmake-build-debug/CMakeFiles/HackerSIm.dir/PriceGenerator.cpp.obj"
+  "C:/Users/Caleb/CLionProjects/VIrus/VIrus.cpp" "C:/Users/Caleb/CLionProjects/VIrus/cmake-build-debug/CMakeFiles/HackerSIm.dir/VIrus.cpp.obj"
+  "C:/Users/Caleb/CLionProjects/VIrus/main.cpp" "C:/Users/Caleb/CLionProjects/VIrus/cmake-build-debug/CMakeFiles/HackerSIm.dir/main.cpp.obj"
+  "C:/Users/Caleb/CLionProjects/VIrus/utility.cpp" "C:/Users/Caleb/CLionProjects/VIrus/cmake-build-debug/CMakeFiles/HackerSIm.dir/utility.cpp.obj"
   )
-set(CMAKE_CXX_COMPILER_ID "GNU")
+set(CMAKE_CXX_COMPILER_ID "MSVC")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH

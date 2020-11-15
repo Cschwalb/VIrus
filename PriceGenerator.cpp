@@ -10,8 +10,7 @@ PriceGenerator::PriceGenerator() {
     std::cout<< "Price Generator Constructor" << std::endl;
 }
 
-const float
-PriceGenerator::generatePriceForQuantityPlayerBuy(const enum ComplexityPrice price,
+const float PriceGenerator::generatePriceForQuantityPlayerBuy(const enum ComplexityPrice price,
         Player & pPlayer,
         int nQuantity) {
     const auto playerRegion = (pPlayer.getRegionHeat() / 100); // turn this to a percentage

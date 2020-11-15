@@ -5,6 +5,7 @@
 #ifndef HACKERSIM_VIRUS_H
 #define HACKERSIM_VIRUS_H
 #include "string"
+#include "PriceGenerator.h"
 
 class VIrus {
 public:
@@ -18,7 +19,7 @@ public:
     inline void setCost(double dCost){
         this->m_dCost = dCost;
     }
-    float getComplexity();
+    ComplexityPrice getComplexity();
     void setComplexity(float);
     bool attack();
     bool defense();

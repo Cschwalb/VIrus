@@ -6,12 +6,9 @@
 #include <iostream>
 #include <iomanip>
 #include "VIrus.h"
-#include <unistd.h>
 // pinging ourselves...
 #include <stdio.h>
-#include <sys/socket.h>
 #include <stdlib.h>
-#include <netinet/in.h>
 #include <string.h>
 #define PORT 8080
 

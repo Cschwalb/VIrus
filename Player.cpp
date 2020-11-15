@@ -6,6 +6,7 @@
 #include "Player.h"
 #include "string"
 #include "utility.h"
+#include "sstream"
 
 Player::Player(Backpack b,
                std::string name,
