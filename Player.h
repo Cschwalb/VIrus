@@ -4,7 +4,8 @@
 
 #ifndef HACKERSIM_PLAYER_H
 #define HACKERSIM_PLAYER_H
-#include "cmake-build-debug/Backpack.h"
+#include "VIrus.h"
+#include "Backpack.h"
 #include "list"
 
 class Player {

@@ -44,38 +44,39 @@ double VIrus::getCost(){
     return this->m_dCost;
 }
 
-void VIrus::setComplexity(float complex) {
-    this->m_fComplexity = complex;
+void VIrus::setComplexity(float complexity) {
+    this->m_fComplexity = complexity;
 }
 
-ComplexityPrice VIrus::getComplexity() {
+PriceGenerator::ComplexityPrice VIrus::getComplexity() {
     if(this->m_fComplexity <= 1)
-        return ComplexityPrice::one;
+        return PriceGenerator::ComplexityPrice::one;
     if(this->m_fComplexity >= 2 && this->m_fComplexity < 3)
-        return ComplexityPrice::two;
+        return PriceGenerator::ComplexityPrice::two;
     if(this->m_fComplexity >= 3 && this->m_fComplexity < 4)
-        return ComplexityPrice::three;
+        return PriceGenerator::ComplexityPrice::three;
     if(this->m_fComplexity >= 4 && this->m_fComplexity < 5)
-        return ComplexityPrice::four;
+        return PriceGenerator::ComplexityPrice::four;
     if(this->m_fComplexity >= 5 && this->m_fComplexity < 6)
-        return ComplexityPrice::five;
+        return PriceGenerator::ComplexityPrice::five;
     if(this->m_fComplexity >= 6 && this->m_fComplexity < 7)
-        return ComplexityPrice::six;
-    if(this->m_fComplexity >= 7 && this->m_fComplexity  8)
-        return ComplexityPrice::seven;
+        return PriceGenerator::ComplexityPrice::six;
+    if(this->m_fComplexity >= 7 && this->m_fComplexity < 8)
+        return PriceGenerator::ComplexityPrice::seven;
     if(this->m_fComplexity >= 8 && this->m_fComplexity < 9)
-        return ComplexityPrice::eight;
+        return PriceGenerator::ComplexityPrice::eight;
     if(this->m_fComplexity >= 9 && this->m_fComplexity < 10)
-        return ComplexityPrice::nine;
+        return PriceGenerator::ComplexityPrice::nine;
+    return PriceGenerator::ComplexityPrice::ten;
 
 }
 
 bool VIrus::attack() {
-    return attack();
+    return true;
 }
 
 bool VIrus::defense() {
-    return defense();
+    return true;
 }
 
 bool VIrus::decode(float fAttackComplexity) {

@@ -4,11 +4,17 @@
 
 #ifndef HACKERSIM_PRICEGENERATOR_H
 #define HACKERSIM_PRICEGENERATOR_H
+
 #include "vector"
 #include "string"
 #include "Player.h"
 
-enum ComplexityPrice{
+
+
+class PriceGenerator {
+
+public:
+	enum ComplexityPrice{
         zero = 100,
         one = 200,
         two = 350,
@@ -21,9 +27,6 @@ enum ComplexityPrice{
         nine = 3217,
         ten = 4500
 };
-
-class PriceGenerator {
-public:
     PriceGenerator();
     float volatilityGenerator(Player pPlayer);
     const float generatePriceForQuantityPlayerBuy(const enum ComplexityPrice, Player &, int nQuantity);

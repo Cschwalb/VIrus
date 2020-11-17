@@ -26,7 +26,8 @@ int main() {
     std::cout<<"caleb caleb caleb " << pPlay->getBackpack().countWritten()<<std::endl;
     std::cout<<newVirus->toString().c_str()<<std::endl;
     std::cout<<pPlay->getBackpack().dumpCurrentItems()<<std::endl;
-    float fSellPrice = out.generatePriceForQuantityPlayerSell(newVirus->getComplexity(), *pPlay, 1);
+    newVirus->setComplexity(2);
+    //float fSellPrice = out.generatePriceForQuantityPlayerSell(newVirus->getComplexity(), *pPlay, 1.0);
  /*   std::cout<<ut.PrecisionSetPrint(
             out.generatePriceForQuantityPlayerBuy(
                     ComplexityPrice::two,

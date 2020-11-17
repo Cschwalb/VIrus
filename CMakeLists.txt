@@ -3,4 +3,4 @@ project(HackerSIm)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(HackerSIm main.cpp cmake-build-debug/Backpack.cpp cmake-build-debug/Backpack.h VIrus.cpp VIrus.h PriceGenerator.cpp PriceGenerator.h Player.cpp Player.h utility.cpp utility.h)
+add_executable(HackerSIm main.cpp Backpack.cpp Backpack.h VIrus.cpp VIrus.h PriceGenerator.cpp PriceGenerator.h Player.cpp Player.h utility.cpp utility.h)
